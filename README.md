@@ -9,7 +9,7 @@
 [Документация клавиатур](https://vk.com/dev/bots_docs_3)
 
 ```bash
-$ composer require astaroth/vk-keyboard
+$ composer require labile/vk-keyboard
 ```
 
 ## Использование
