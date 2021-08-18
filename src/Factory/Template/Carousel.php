@@ -1,11 +1,11 @@
 <?php
 
-namespace Sally\VkKeyboard\Factory\Template;
+namespace Astaroth\VkKeyboard\Factory\Template;
 
-use Sally\VkKeyboard\Contracts;
-use Sally\VkKeyboard\Object as VkObject;
+use Astaroth\VkKeyboard\Contracts;
+use Astaroth\VkKeyboard\Object as VkObject;
 
-class Carousel implements Contracts\Factory\Template\CarouselInterface
+class Carousel implements \Astaroth\VkKeyboard\Contracts\Factory\Template\CarouselInterface
 {
     /**
      * @var Contracts\Template\Carousel\Type\FactoryInterface
@@ -30,7 +30,7 @@ class Carousel implements Contracts\Factory\Template\CarouselInterface
     public function getTypeFactory(): Contracts\Template\Carousel\Type\FactoryInterface
     {
         if ($this->typeFactory === null) {
-            $this->typeFactory = new VkObject\Template\Carousel\Type\Factory(
+            $this->typeFactory = new \Astaroth\VkKeyboard\Object\Template\Carousel\Type\Factory(
                 $this->getElementFactory(),
                 $this->buttonFactory
             );
@@ -42,7 +42,7 @@ class Carousel implements Contracts\Factory\Template\CarouselInterface
     public function getElementFactory(): Contracts\Template\Carousel\Element\FactoryInterface
     {
         if ($this->elementFactory === null) {
-            $this->elementFactory = new VkObject\Template\Carousel\Element\Factory();
+            $this->elementFactory = new \Astaroth\VkKeyboard\Object\Template\Carousel\Element\Factory();
         }
 
         return $this->elementFactory;

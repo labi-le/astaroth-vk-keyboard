@@ -6,7 +6,7 @@
  * Time: 18:00
  */
 
-namespace Sally\VkKeyboard\Object\Keyboard\Type;
+namespace Astaroth\VkKeyboard\Object\Keyboard\Type;
 
 class Basic extends AbstractType {
 

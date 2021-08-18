@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Contracts\Keyboard\Button;
+namespace Astaroth\VkKeyboard\Contracts\Keyboard\Button;
 
-use Sally\VkKeyboard\Object\Keyboard\Button;
+use Astaroth\VkKeyboard\Object\Keyboard\Button;
 
 interface FactoryInterface
 {
@@ -10,5 +10,6 @@ interface FactoryInterface
     public function location(array $payload): Button\Location;
     public function pay(string $hash): Button\Pay;
     public function text(string $label,array $payload, string $color = Button\Text::COLOR_GREEN): Button\Text;
+    public function callback(string $label,array $payload, string $color = Button\Text::COLOR_GREEN): Button\Text;
     public function link(string $label, string $link, array $payload): Button\Link;
 }

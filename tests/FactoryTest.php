@@ -3,7 +3,7 @@
 namespace Test;
 
 use PHPUnit\Framework\TestCase;
-use Sally\VkKeyboard\Factory;
+use Astaroth\VkKeyboard\Factory;
 
 class FactoryTest extends TestCase
 {

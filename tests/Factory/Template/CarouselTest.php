@@ -3,9 +3,9 @@
 namespace Test\Factory\Template;
 
 use PHPUnit\Framework\MockObject\MockObject;
-use Sally\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
-use Sally\VkKeyboard\Factory\Template\Carousel;
-use Sally\VkKeyboard\Object as VkObject;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
+use Astaroth\VkKeyboard\Factory\Template\Carousel;
+use Astaroth\VkKeyboard\Object as VkObject;
 use PHPUnit\Framework\TestCase;
 
 class CarouselTest extends TestCase
@@ -33,14 +33,14 @@ class CarouselTest extends TestCase
 
         $typeFactory = $carousel->getTypeFactory();
         $this->assertSame($typeFactory, $carousel->getTypeFactory());
-        $this->assertInstanceOf(VkObject\Template\Carousel\Type\Factory::class, $typeFactory);
+        $this->assertInstanceOf(\Astaroth\VkKeyboard\Object\Template\Carousel\Type\Factory::class, $typeFactory);
     }
 
     public function testGetElementFactory(): void
     {
         $carousel = new Carousel($this->buttonFactory);
         $elementFactory = $carousel->getElementFactory();
-        $this->assertInstanceOf(VkObject\Template\Carousel\Element\Factory::class, $elementFactory);
+        $this->assertInstanceOf(\Astaroth\VkKeyboard\Object\Template\Carousel\Element\Factory::class, $elementFactory);
         $this->assertSame($elementFactory, $carousel->getElementFactory());
     }
 }

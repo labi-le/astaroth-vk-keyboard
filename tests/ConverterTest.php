@@ -4,8 +4,8 @@ namespace Test;
 
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-use Sally\VkKeyboard\Contracts;
-use Sally\VkKeyboard\Converter;
+use Astaroth\VkKeyboard\Contracts;
+use Astaroth\VkKeyboard\Converter;
 
 class ConverterTest extends TestCase
 {
@@ -50,7 +50,7 @@ class ConverterTest extends TestCase
             ->method('getTemplateFactory')
             ->willReturn($templateFactory);
 
-        $carouselFactory = $this->createMock(Contracts\Factory\Template\CarouselInterface::class);
+        $carouselFactory = $this->createMock(\Astaroth\VkKeyboard\Contracts\Factory\Template\CarouselInterface::class);
         $templateFactory
             ->expects($this->once())
             ->method('getCarouselFactory')

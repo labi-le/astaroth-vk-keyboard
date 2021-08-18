@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard;
+namespace Astaroth\VkKeyboard;
 
-use Sally\VkKeyboard\Contracts;
+use Astaroth\VkKeyboard\Contracts;
 
 class Factory implements Contracts\FactoryInterface
 {

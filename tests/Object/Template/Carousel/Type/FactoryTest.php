@@ -3,21 +3,21 @@
 namespace Test\Object\Template\Carousel\Type;
 
 use PHPUnit\Framework\MockObject\MockObject;
-use Sally\VkKeyboard\Object as VkObject;
+use Astaroth\VkKeyboard\Object as VkObject;
 use PHPUnit\Framework\TestCase;
 
 class FactoryTest extends TestCase
 {
     /**
-     * @var VkObject\Template\Carousel\Type\Factory|MockObject
+     * @var \Astaroth\VkKeyboard\Object\Template\Carousel\Type\Factory|MockObject
      */
     private $typeFactory;
 
     public function setUp(): void
     {
-        $this->typeFactory = new VkObject\Template\Carousel\Type\Factory(
-            new VkObject\Template\Carousel\Element\Factory(),
-            new VkObject\Keyboard\Button\Factory()
+        $this->typeFactory = new \Astaroth\VkKeyboard\Object\Template\Carousel\Type\Factory(
+            new \Astaroth\VkKeyboard\Object\Template\Carousel\Element\Factory(),
+            new \Astaroth\VkKeyboard\Object\Keyboard\Button\Factory()
         );
     }
 

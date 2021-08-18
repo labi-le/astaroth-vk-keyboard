@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard;
+namespace Astaroth\VkKeyboard;
 
-use Sally\VkKeyboard\Contracts\FactoryInterface;
+use Astaroth\VkKeyboard\Contracts\FactoryInterface;
 
 class Facade
 {

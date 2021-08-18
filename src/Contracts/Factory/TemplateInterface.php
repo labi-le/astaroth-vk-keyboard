@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Contracts\Factory;
+namespace Astaroth\VkKeyboard\Contracts\Factory;
 
 interface TemplateInterface
 {
-    public function getCarouselFactory(): Template\CarouselInterface;
+    public function getCarouselFactory(): \Astaroth\VkKeyboard\Contracts\Factory\Template\CarouselInterface;
 }

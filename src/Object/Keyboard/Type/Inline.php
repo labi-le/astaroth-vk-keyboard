@@ -1,6 +1,6 @@
 <?php
 
-namespace Sally\VkKeyboard\Object\Keyboard\Type;
+namespace Astaroth\VkKeyboard\Object\Keyboard\Type;
 
 class Inline extends AbstractType {
 

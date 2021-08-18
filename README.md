@@ -1,7 +1,7 @@
 # VK Keyboard
-[![Latest Version](https://badgen.net/packagist/v/sally/vk-keyboard)](https://packagist.org/packages/sally/vk-keyboard)
+[![Latest Version](https://badgen.net/packagist/v/labile/vk-keyboard)](https://packagist.org/packages/labile/vk-keyboard)
 [![Licence](https://badgen.net/badge/license/MIT/blue)](LICENCE)
-[![Last Commit](https://badgen.net/github/last-commit/Sally-Framework/vk-keyboard)](https://github.com/Sally-Framework/vk-keyboard)
+[![Last Commit](https://badgen.net/github/last-commit/labi-le/vk-keyboard)](https://github.com/labi-le/vk-keyboard)
 ## Установка
 
 Перед установкой рекомендую ознакомиться с последними обновлениями api вконтакте, 
@@ -9,7 +9,7 @@
 [Документация клавиатур](https://vk.com/dev/bots_docs_3)
 
 ```bash
-$ composer require sally/vk-keyboard
+$ composer require astaroth/vk-keyboard
 ```
 
 ## Использование
@@ -22,17 +22,18 @@ $ composer require sally/vk-keyboard
 ![Open Link](images/vk_carousel.jpg)
 
 
-Чтобы создать такие объекты кавиатур воспользуйтесь фасадом-конструктором этих объектов.
+Чтобы создать такие объекты клавиатур воспользуйтесь фасадом-конструктором этих объектов.
 
 ## Для создания обычной клавиатуры
+
 ```php
 <?php
 
 require '../vendor/autoload.php';
 
-use Sally\VkKeyboard\Facade;
-use Sally\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
-use Sally\VkKeyboard\Object\Keyboard\Button\Text;
+use Astaroth\VkKeyboard\Facade;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
+use Astaroth\VkKeyboard\Object\Keyboard\Button\Text;
 
 $keyboard = Facade::createKeyboardBasic(function (FactoryInterface $factory) {
     return [
@@ -112,14 +113,15 @@ $keyboard = Facade::createKeyboardBasic(function (FactoryInterface $factory) {
 ![Keyboard](images/basic_keyboard.png)
 
 ## Для Inline клавиатуры
+
 ```php
 <?php
 
 require '../vendor/autoload.php';
 
-use Sally\VkKeyboard\Facade;
-use Sally\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
-use Sally\VkKeyboard\Object\Keyboard\Button\Text;
+use Astaroth\VkKeyboard\Facade;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
+use Astaroth\VkKeyboard\Object\Keyboard\Button\Text;
 
 $keyboard = Facade::createKeyboardInline(function (FactoryInterface $factory) {
     return [
@@ -197,14 +199,15 @@ $keyboard = Facade::createKeyboardInline(function (FactoryInterface $factory) {
 ![Inline](images/inline_keyboard.png)
 
 ## Для каруселей
+
 ```php
 <?php
 
 require '../vendor/autoload.php';
 
-use Sally\VkKeyboard\Facade;
-use Sally\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface as ButtonFactoryInterface;
-use Sally\VkKeyboard\Contracts\Template\Carousel\Element\FactoryInterface as CarouselElementInterface;
+use Astaroth\VkKeyboard\Facade;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface as ButtonFactoryInterface;
+use Astaroth\VkKeyboard\Contracts\Template\Carousel\Element\FactoryInterface as CarouselElementInterface;
 
 $templateWithOpenPhoto = Facade::createCarousel(function (CarouselElementInterface $elementFactory, ButtonFactoryInterface $buttonFactory) {
     return [

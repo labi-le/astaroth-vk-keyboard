@@ -1,9 +1,9 @@
 <?php
 
-namespace Sally\VkKeyboard\Factory;
+namespace Astaroth\VkKeyboard\Factory;
 
-use Sally\VkKeyboard\Contracts;
-use Sally\VkKeyboard\Object as VkObject;
+use Astaroth\VkKeyboard\Contracts;
+use Astaroth\VkKeyboard\Object as VkObject;
 
 class Keyboard implements Contracts\Factory\KeyboardInterface
 {
@@ -20,7 +20,7 @@ class Keyboard implements Contracts\Factory\KeyboardInterface
     public function getTypeFactory(): Contracts\Keyboard\Type\FactoryInterface
     {
         if ($this->typeFactory === null) {
-            $this->typeFactory = new VkObject\Keyboard\Type\Factory($this->getButtonFactory());
+            $this->typeFactory = new \Astaroth\VkKeyboard\Object\Keyboard\Type\Factory($this->getButtonFactory());
         }
 
         return $this->typeFactory;
@@ -29,7 +29,7 @@ class Keyboard implements Contracts\Factory\KeyboardInterface
     public function getButtonFactory(): Contracts\Keyboard\Button\FactoryInterface
     {
         if ($this->buttonFactory === null) {
-            $this->buttonFactory = new VkObject\Keyboard\Button\Factory();
+            $this->buttonFactory = new \Astaroth\VkKeyboard\Object\Keyboard\Button\Factory();
         }
 
         return $this->buttonFactory;

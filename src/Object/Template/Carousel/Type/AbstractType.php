@@ -6,10 +6,10 @@
  * Time: 17:59
  */
 
-namespace Sally\VkKeyboard\Object\Template\Carousel\Type;
+namespace Astaroth\VkKeyboard\Object\Template\Carousel\Type;
 
-use Sally\VkKeyboard\Contracts\Convertible\JsonInterface;
-use Sally\VkKeyboard\Object\Template\Carousel\Element\AbstractElement;
+use Astaroth\VkKeyboard\Contracts\Convertible\JsonInterface;
+use Astaroth\VkKeyboard\Object\Template\Carousel\Element\AbstractElement;
 
 abstract class AbstractType implements JsonInterface {
 

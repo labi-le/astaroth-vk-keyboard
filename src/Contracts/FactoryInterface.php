@@ -1,6 +1,6 @@
 <?php
 
-namespace Sally\VkKeyboard\Contracts;
+namespace Astaroth\VkKeyboard\Contracts;
 
 interface FactoryInterface
 {

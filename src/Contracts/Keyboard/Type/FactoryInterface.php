@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Contracts\Keyboard\Type;
+namespace Astaroth\VkKeyboard\Contracts\Keyboard\Type;
 
-use Sally\VkKeyboard\Object\Keyboard\Type;
+use Astaroth\VkKeyboard\Object\Keyboard\Type;
 
 interface FactoryInterface
 {

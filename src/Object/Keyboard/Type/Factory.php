@@ -6,9 +6,9 @@
  * Time: 0:25
  */
 
-namespace Sally\VkKeyboard\Object\Keyboard\Type;
+namespace Astaroth\VkKeyboard\Object\Keyboard\Type;
 
-use Sally\VkKeyboard\Contracts\Keyboard;
+use Astaroth\VkKeyboard\Contracts\Keyboard;
 
 class Factory implements Keyboard\Type\FactoryInterface {
 
@@ -30,6 +30,11 @@ class Factory implements Keyboard\Type\FactoryInterface {
     public function inline(callable $callback): Inline
     {
         return new Inline($this->callUserFunctionWithButtonsFactory($callback));
+    }
+
+    public function callback(callable $callback, bool $inline = true): Callback
+    {
+        return new Callback($this->callUserFunctionWithButtonsFactory($callback), $inline);
     }
 
     private function callUserFunctionWithButtonsFactory(callable $function): array

@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Object\Keyboard;
+namespace Astaroth\VkKeyboard\Object\Keyboard;
 
-use Sally\VkKeyboard\Contracts\Keyboard\Type\FactoryInterface;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Type\FactoryInterface;
 
 class Converter
 {

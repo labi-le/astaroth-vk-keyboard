@@ -2,7 +2,7 @@
 
 namespace Test\Object\Keyboard\Type;
 
-use Sally\VkKeyboard\Object\Keyboard\Type\AbstractType;
+use Astaroth\VkKeyboard\Object\Keyboard\Type\AbstractType;
 use Test\Object\AbstractJsonConvertibleTest;
 
 abstract class AbstractTypeTest extends AbstractJsonConvertibleTest

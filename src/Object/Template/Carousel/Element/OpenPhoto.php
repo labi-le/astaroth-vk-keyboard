@@ -6,7 +6,7 @@
  * Time: 2:33
  */
 
-namespace Sally\VkKeyboard\Object\Template\Carousel\Element;
+namespace Astaroth\VkKeyboard\Object\Template\Carousel\Element;
 
 
 class OpenPhoto extends AbstractElement {

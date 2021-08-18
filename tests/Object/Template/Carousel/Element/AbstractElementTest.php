@@ -2,7 +2,7 @@
 
 namespace Test\Object\Template\Carousel\Element;
 
-use Sally\VkKeyboard\Object\Template\Carousel\Element\AbstractElement;
+use Astaroth\VkKeyboard\Object\Template\Carousel\Element\AbstractElement;
 use Test\Object\AbstractJsonConvertibleTest;
 
 abstract class AbstractElementTest extends AbstractJsonConvertibleTest

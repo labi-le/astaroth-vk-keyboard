@@ -6,10 +6,10 @@
  * Time: 2:02
  */
 
-namespace Sally\VkKeyboard\Object\Template\Carousel\Element;
+namespace Astaroth\VkKeyboard\Object\Template\Carousel\Element;
 
-use Sally\VkKeyboard\Contracts\Convertible\ArrayInterface;
-use Sally\VkKeyboard\Object\Keyboard\Button\AbstractButton;
+use Astaroth\VkKeyboard\Contracts\Convertible\ArrayInterface;
+use Astaroth\VkKeyboard\Object\Keyboard\Button\AbstractButton;
 
 abstract class AbstractElement implements ArrayInterface {
 

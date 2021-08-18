@@ -2,8 +2,8 @@
 
 namespace Test\Object\Template\Carousel\Type;
 
-use Sally\VkKeyboard\Object\Template\Carousel\Type\AbstractType;
-use Sally\VkKeyboard\Object\Template\Carousel\Type\Basic;
+use Astaroth\VkKeyboard\Object\Template\Carousel\Type\AbstractType;
+use Astaroth\VkKeyboard\Object\Template\Carousel\Type\Basic;
 
 class BasicTest extends AbstractTypeTest
 {

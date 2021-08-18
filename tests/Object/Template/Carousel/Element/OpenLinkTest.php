@@ -2,7 +2,7 @@
 
 namespace Test\Object\Template\Carousel\Element;
 
-use Sally\VkKeyboard\Object\Template\Carousel\Element;
+use Astaroth\VkKeyboard\Object\Template\Carousel\Element;
 
 class OpenLinkTest extends AbstractElementTest
 {

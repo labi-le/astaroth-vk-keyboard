@@ -1,9 +1,9 @@
 <?php
 
-namespace Sally\VkKeyboard\Object\Keyboard\Type;
+namespace Astaroth\VkKeyboard\Object\Keyboard\Type;
 
-use Sally\VkKeyboard\Contracts\Convertible\JsonInterface;
-use Sally\VkKeyboard\Object\Keyboard\Button\AbstractButton;
+use Astaroth\VkKeyboard\Contracts\Convertible\JsonInterface;
+use Astaroth\VkKeyboard\Object\Keyboard\Button\AbstractButton;
 
 abstract class AbstractType implements JsonInterface {
 
@@ -28,7 +28,9 @@ abstract class AbstractType implements JsonInterface {
         return array_map(function ($button): array {
             if ($button instanceof AbstractButton) {
                 return $button->convert();
-            } elseif (is_array($button)) {
+            }
+
+            if (is_array($button)) {
                 return $this->convertButtonsRecursive($button);
             }
 

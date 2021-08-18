@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Factory;
+namespace Astaroth\VkKeyboard\Factory;
 
-use Sally\VkKeyboard\Contracts;
+use Astaroth\VkKeyboard\Contracts;
 
 class Template implements Contracts\Factory\TemplateInterface
 {
@@ -21,7 +21,7 @@ class Template implements Contracts\Factory\TemplateInterface
         $this->buttonFactory = $buttonFactory;
     }
 
-    public function getCarouselFactory(): Contracts\Factory\Template\CarouselInterface
+    public function getCarouselFactory(): \Astaroth\VkKeyboard\Contracts\Factory\Template\CarouselInterface
     {
         if ($this->carouselFactory === null) {
             $this->carouselFactory = new Template\Carousel($this->buttonFactory);

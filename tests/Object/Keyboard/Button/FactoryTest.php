@@ -2,7 +2,7 @@
 
 namespace Test\Object\Keyboard\Button;
 
-use Sally\VkKeyboard\Object\Keyboard\Button;
+use Astaroth\VkKeyboard\Object\Keyboard\Button;
 use PHPUnit\Framework\TestCase;
 
 class FactoryTest extends TestCase

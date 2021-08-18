@@ -3,11 +3,11 @@
 namespace Test\Factory;
 
 use PHPUnit\Framework\MockObject\MockObject;
-use Sally\VkKeyboard\Contracts\Factory\TemplateInterface;
+use Astaroth\VkKeyboard\Contracts\Factory\TemplateInterface;
 use PHPUnit\Framework\TestCase;
-use Sally\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
-use Sally\VkKeyboard\Factory\Template;
-use Sally\VkKeyboard\Factory\Template\Carousel;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
+use Astaroth\VkKeyboard\Factory\Template;
+use Astaroth\VkKeyboard\Factory\Template\Carousel;
 
 class TemplateTest extends TestCase
 {

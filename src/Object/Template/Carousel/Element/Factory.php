@@ -6,9 +6,9 @@
  * Time: 2:57
  */
 
-namespace Sally\VkKeyboard\Object\Template\Carousel\Element;
+namespace Astaroth\VkKeyboard\Object\Template\Carousel\Element;
 
-use Sally\VkKeyboard\Contracts\Template\Carousel\Element\FactoryInterface;
+use Astaroth\VkKeyboard\Contracts\Template\Carousel\Element\FactoryInterface;
 
 class Factory implements FactoryInterface {
 

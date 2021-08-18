@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Object\Template\Carousel;
+namespace Astaroth\VkKeyboard\Object\Template\Carousel;
 
-use Sally\VkKeyboard\Contracts\Template\Carousel\Type\FactoryInterface;
+use Astaroth\VkKeyboard\Contracts\Template\Carousel\Type\FactoryInterface;
 
 class Converter
 {

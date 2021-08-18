@@ -2,8 +2,8 @@
 
 namespace Test\Object\Keyboard\Button;
 
-use Sally\VkKeyboard\Object\Keyboard\Button\AbstractButton;
-use Sally\VkKeyboard\Object\Keyboard\Button\App;
+use Astaroth\VkKeyboard\Object\Keyboard\Button\AbstractButton;
+use Astaroth\VkKeyboard\Object\Keyboard\Button\App;
 
 class AppTest extends AbstractButtonTest
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Sally\VkKeyboard\Object\Keyboard\Button;
+namespace Astaroth\VkKeyboard\Object\Keyboard\Button;
 
 class App extends AbstractButton {
 

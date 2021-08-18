@@ -3,8 +3,8 @@
 namespace Test\Object\Keyboard\Type;
 
 use PHPUnit\Framework\MockObject\MockObject;
-use Sally\VkKeyboard\Contracts\Keyboard\Button;
-use Sally\VkKeyboard\Object\Keyboard\Type;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button;
+use Astaroth\VkKeyboard\Object\Keyboard\Type;
 use PHPUnit\Framework\TestCase;
 
 class FactoryTest extends TestCase

@@ -6,7 +6,7 @@
  * Time: 0:17
  */
 
-namespace Sally\VkKeyboard\Object\Template\Carousel\Type;
+namespace Astaroth\VkKeyboard\Object\Template\Carousel\Type;
 
 class Basic extends AbstractType {
 

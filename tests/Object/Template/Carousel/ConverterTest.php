@@ -3,10 +3,10 @@
 namespace Test\Object\Template\Carousel;
 
 use PHPUnit\Framework\MockObject\MockObject;
-use Sally\VkKeyboard\Contracts;
-use Sally\VkKeyboard\Object\Template\Carousel\Converter;
+use Astaroth\VkKeyboard\Contracts;
+use Astaroth\VkKeyboard\Object\Template\Carousel\Converter;
 use PHPUnit\Framework\TestCase;
-use Sally\VkKeyboard\Object\Template\Carousel;
+use Astaroth\VkKeyboard\Object\Template\Carousel;
 
 class ConverterTest extends TestCase
 {
@@ -28,7 +28,7 @@ class ConverterTest extends TestCase
 
     public function testBasic()
     {
-        $basic = $this->createMock(Carousel\Type\Basic::class);
+        $basic = $this->createMock(\Astaroth\VkKeyboard\Object\Template\Carousel\Type\Basic::class);
         $basic->expects($this->once())
             ->method('convert');
 

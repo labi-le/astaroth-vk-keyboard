@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Object\Keyboard\Button;
+namespace Astaroth\VkKeyboard\Object\Keyboard\Button;
 
-use Sally\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
 
 class Factory implements FactoryInterface
 {
@@ -20,6 +20,10 @@ class Factory implements FactoryInterface
 
     public function text(string $label,array $payload, string $color = Text::COLOR_GREEN): Text {
         return new Text($label, $payload, $color);
+    }
+
+    public function callback(string $label,array $payload, string $color = Text::COLOR_GREEN): Text {
+        return new Callback($label, $payload, $color);
     }
 
     public function link(string $label, string $link, array $payload): Link {

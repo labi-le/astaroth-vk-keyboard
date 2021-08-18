@@ -6,10 +6,10 @@
  * Time: 2:58
  */
 
-namespace Sally\VkKeyboard\Object\Template\Carousel\Type;
+namespace Astaroth\VkKeyboard\Object\Template\Carousel\Type;
 
-use Sally\VkKeyboard\Contracts\Template\Carousel;
-use Sally\VkKeyboard\Contracts\Keyboard;
+use Astaroth\VkKeyboard\Contracts\Template\Carousel;
+use Astaroth\VkKeyboard\Contracts\Keyboard;
 
 class Factory implements Carousel\Type\FactoryInterface
 {

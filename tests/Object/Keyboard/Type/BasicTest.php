@@ -2,8 +2,8 @@
 
 namespace Test\Object\Keyboard\Type;
 
-use Sally\VkKeyboard\Object\Keyboard\Type\AbstractType;
-use Sally\VkKeyboard\Object\Keyboard\Type\Basic;
+use Astaroth\VkKeyboard\Object\Keyboard\Type\AbstractType;
+use Astaroth\VkKeyboard\Object\Keyboard\Type\Basic;
 
 class BasicTest extends AbstractTypeTest
 {

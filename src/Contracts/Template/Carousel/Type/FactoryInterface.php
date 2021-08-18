@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Contracts\Template\Carousel\Type;
+namespace Astaroth\VkKeyboard\Contracts\Template\Carousel\Type;
 
-use Sally\VkKeyboard\Object\Template\Carousel\Type\Basic;
+use Astaroth\VkKeyboard\Object\Template\Carousel\Type\Basic;
 
 interface FactoryInterface
 {

@@ -3,14 +3,14 @@
 namespace Test\Object\Keyboard;
 
 use PHPUnit\Framework\MockObject\MockObject;
-use Sally\VkKeyboard\Object as VkObject;
-use Sally\VkKeyboard\Contracts;
+use Astaroth\VkKeyboard\Object as VkObject;
+use Astaroth\VkKeyboard\Contracts;
 use PHPUnit\Framework\TestCase;
 
 class ConverterTest extends TestCase
 {
     /**
-     * @var VkObject\Keyboard\Converter
+     * @var \Astaroth\VkKeyboard\Object\Keyboard\Converter
      */
     private $converter;
 
@@ -22,12 +22,12 @@ class ConverterTest extends TestCase
     public function setUp(): void
     {
         $this->factory   = $this->createMock(Contracts\Keyboard\Type\FactoryInterface::class);
-        $this->converter = new VkObject\Keyboard\Converter($this->factory);
+        $this->converter = new \Astaroth\VkKeyboard\Object\Keyboard\Converter($this->factory);
     }
 
     public function testInline()
     {
-        $inline = $this->createMock(VkObject\Keyboard\Type\Inline::class);
+        $inline = $this->createMock(\Astaroth\VkKeyboard\Object\Keyboard\Type\Inline::class);
         $this->factory
             ->expects($this->once())
             ->method('inline')
@@ -47,7 +47,7 @@ class ConverterTest extends TestCase
 
     public function testBasic()
     {
-        $basic = $this->createMock(VkObject\Keyboard\Type\Basic::class);
+        $basic = $this->createMock(\Astaroth\VkKeyboard\Object\Keyboard\Type\Basic::class);
         $this->factory
             ->expects($this->once())
             ->method('basic')

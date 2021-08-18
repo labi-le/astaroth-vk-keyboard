@@ -2,9 +2,9 @@
 
 require '../vendor/autoload.php';
 
-use Sally\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
-use Sally\VkKeyboard\Facade;
-use Sally\VkKeyboard\Object\Keyboard\Button\Text;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface;
+use Astaroth\VkKeyboard\Facade;
+use Astaroth\VkKeyboard\Object\Keyboard\Button\Text;
 use VK\Client\VKApiClient;
 
 $config = require_once 'config.php';

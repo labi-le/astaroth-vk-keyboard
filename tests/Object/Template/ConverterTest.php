@@ -2,10 +2,10 @@
 
 namespace Test\Object\Template;
 
-use Sally\VkKeyboard\Object\Template\Converter;
+use Astaroth\VkKeyboard\Object\Template\Converter;
 use PHPUnit\Framework\TestCase;
-use Sally\VkKeyboard\Object\Template\Carousel;
-use Sally\VkKeyboard\Object\Keyboard;
+use Astaroth\VkKeyboard\Object\Template\Carousel;
+use Astaroth\VkKeyboard\Object\Keyboard;
 
 class ConverterTest extends TestCase
 {
@@ -21,9 +21,9 @@ class ConverterTest extends TestCase
 
     public function testCarousel()
     {
-        $elementFactory = new Carousel\Element\Factory();
-        $buttonFactory  = new Keyboard\Button\Factory();
-        $typeFactory = new Carousel\Type\Factory($elementFactory, $buttonFactory);
+        $elementFactory = new \Astaroth\VkKeyboard\Object\Template\Carousel\Element\Factory();
+        $buttonFactory  = new \Astaroth\VkKeyboard\Object\Keyboard\Button\Factory();
+        $typeFactory = new \Astaroth\VkKeyboard\Object\Template\Carousel\Type\Factory($elementFactory, $buttonFactory);
         $this->assertEquals(new Carousel\Converter($typeFactory), $this->converter->carousel($typeFactory));
     }
 }

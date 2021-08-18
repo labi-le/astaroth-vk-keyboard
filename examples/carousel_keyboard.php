@@ -2,9 +2,9 @@
 
 require '../vendor/autoload.php';
 
-use Sally\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface as ButtonFactoryInterface;
-use Sally\VkKeyboard\Contracts\Template\Carousel\Element\FactoryInterface as CarouselElementInterface;
-use Sally\VkKeyboard\Facade;
+use Astaroth\VkKeyboard\Contracts\Keyboard\Button\FactoryInterface as ButtonFactoryInterface;
+use Astaroth\VkKeyboard\Contracts\Template\Carousel\Element\FactoryInterface as CarouselElementInterface;
+use Astaroth\VkKeyboard\Facade;
 use VK\Client\VKApiClient;
 
 $config = require_once 'config.php';

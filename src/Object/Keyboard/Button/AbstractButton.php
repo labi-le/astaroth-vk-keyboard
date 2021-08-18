@@ -1,8 +1,8 @@
 <?php
 
-namespace Sally\VkKeyboard\Object\Keyboard\Button;
+namespace Astaroth\VkKeyboard\Object\Keyboard\Button;
 
-use Sally\VkKeyboard\Contracts\Convertible\ArrayInterface;
+use Astaroth\VkKeyboard\Contracts\Convertible\ArrayInterface;
 
 abstract class AbstractButton implements ArrayInterface {
 
