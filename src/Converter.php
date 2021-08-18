@@ -16,12 +16,12 @@ class Converter
     private $factory;
 
     /**
-     * @var Astaroth\VkKeyboard\Object\Keyboard\Converter
+     * @var \Astaroth\VkKeyboard\Object\Keyboard\Converter
      */
     private $keyboardConverter;
 
     /**
-     * @var Astaroth\VkKeyboard\Object\Template\Carousel\Converter
+     * @var \Astaroth\VkKeyboard\Object\Template\Carousel\Converter
      */
     private $carouselConverter;
 
@@ -30,19 +30,19 @@ class Converter
         $this->factory = $factory;
     }
 
-    public function keyboard(): Astaroth\VkKeyboard\Object\Keyboard\Converter
+    public function keyboard(): \Astaroth\VkKeyboard\Object\Keyboard\Converter
     {
         if ($this->keyboardConverter === null) {
-            $this->keyboardConverter = new Astaroth\VkKeyboard\Object\Keyboard\Converter($this->factory->getKeyboardFactory()->getTypeFactory());
+            $this->keyboardConverter = new \Astaroth\VkKeyboard\Object\Keyboard\Converter($this->factory->getKeyboardFactory()->getTypeFactory());
         }
 
         return $this->keyboardConverter;
     }
 
-    public function carousel(): Astaroth\VkKeyboard\Object\Template\Carousel\Converter
+    public function carousel(): \Astaroth\VkKeyboard\Object\Template\Carousel\Converter
     {
         if ($this->carouselConverter === null) {
-            $this->carouselConverter = new Astaroth\VkKeyboard\Object\Template\Carousel\Converter(
+            $this->carouselConverter = new \Astaroth\VkKeyboard\Object\Template\Carousel\Converter(
                 $this->factory->getTemplateFactory()->getCarouselFactory()->getTypeFactory()
             );
         }
