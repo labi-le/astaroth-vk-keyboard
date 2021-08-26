@@ -1,11 +1,13 @@
 # VK Keyboard
+
 [![Latest Version](https://badgen.net/packagist/v/labile/vk-keyboard)](https://packagist.org/packages/labile/vk-keyboard)
 [![Licence](https://badgen.net/badge/license/MIT/blue)](LICENCE)
 [![Last Commit](https://badgen.net/github/last-commit/labi-le/vk-keyboard)](https://github.com/labi-le/vk-keyboard)
+
 ## Установка
 
-Перед установкой рекомендую ознакомиться с последними обновлениями api вконтакте, 
-а также прочитать про типы кнопок, клавиатур, каруселей и особенностей работы с api вконтакте.
+Перед установкой рекомендую ознакомиться с последними обновлениями api вконтакте, а также прочитать про типы кнопок,
+клавиатур, каруселей и особенностей работы с api вконтакте.
 [Документация клавиатур](https://vk.com/dev/bots_docs_3)
 
 ```bash
@@ -13,14 +15,21 @@ $ composer require labile/vk-keyboard
 ```
 
 ## Использование
-На момент создания библиотеки api вконтакте поддерживает 3 типа клавиатур, а именно inline, обычная клавиатура и карусели
-## Обычные
-![Basic](images/vk_basic.jpg)
-## Inline
-![Inline](images/vk_inline.jpg)
-## Карусели
-![Open Link](images/vk_carousel.jpg)
 
+На момент создания библиотеки api вконтакте поддерживает 3 типа клавиатур, а именно inline, обычная клавиатура и
+карусели
+
+## Обычные
+
+![Basic](images/vk_basic.jpg)
+
+## Inline
+
+![Inline](images/vk_inline.jpg)
+
+## Карусели
+
+![Open Link](images/vk_carousel.jpg)
 
 Чтобы создать такие объекты клавиатур воспользуйтесь фасадом-конструктором этих объектов.
 
@@ -42,6 +51,7 @@ $keyboard = Facade::createKeyboardBasic(function (FactoryInterface $factory) {
         ],
         [
             $factory->text('Текстовая кнопка', ['button' => 1], Text::COLOR_RED),
+            $factory->callback('callback кнопка', ['button' => 2], Text::COLOR_BLUE),
             $factory->link('Кнопка с ссылкой', 'https://github.com/Sally-Framework/vk-keyboard', []),
         ],
         [
@@ -56,6 +66,7 @@ $keyboard = Facade::createKeyboardBasic(function (FactoryInterface $factory) {
 ```
 
 Фасад сконвертирует клавиатуру в json, согласно требованиям api вконтакте
+
 ```json
 {
   "one_time": true,
@@ -75,6 +86,14 @@ $keyboard = Facade::createKeyboardBasic(function (FactoryInterface $factory) {
           "payload": "{\"button\":1}",
           "label": "Текстовая кнопка",
           "type": "text"
+        }
+      },
+      {
+        "color": "primary",
+        "action": {
+          "payload": "{\"button\":2}",
+          "label": "callback кнопка",
+          "type": "callback"
         }
       },
       {
@@ -130,6 +149,7 @@ $keyboard = Facade::createKeyboardInline(function (FactoryInterface $factory) {
         ],
         [
             $factory->text('Текстовая кнопка', ['button' => 1], Text::COLOR_RED),
+            $factory->callback('callback кнопка', ['button' => 2], Text::COLOR_BLUE),
             $factory->link('Кнопка с ссылкой', 'https://github.com/Sally-Framework/vk-keyboard', []),
         ],
         [
@@ -162,6 +182,14 @@ $keyboard = Facade::createKeyboardInline(function (FactoryInterface $factory) {
           "payload": "{\"button\":1}",
           "label": "Текстовая кнопка",
           "type": "text"
+        }
+      },
+      {
+        "color": "primary",
+        "action": {
+          "payload": "{\"button\":2}",
+          "label": "callback кнопка",
+          "type": "callback"
         }
       },
       {
@@ -332,4 +360,5 @@ $templateWithOpenPhoto = Facade::createCarousel(function (CarouselElementInterfa
 ![Carousel](images/open_photo.png)
 
 ## Примеры
+
 Более детальные примеры представлены [здесь](examples).
